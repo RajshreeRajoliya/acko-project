@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useStore,useDispatch } from 'react-redux';
 import { updateSearch } from '../../Redux/SearchReducer/SearchAction';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -48,12 +49,12 @@ function First(props) {
                             variant={"unstyled"}
                             onChange={(e)=>setNumber(e.target.value)}
                             />
-                        <Button 
+                     <Link to="/bike">  <Button 
                         onClick={()=>{
                             dispatch(updateSearch(number))
                         }}
                             padding="25px 50px"
-                            colorScheme="green">Insure Now</Button>
+                            colorScheme="green">Insure Now</Button></Link> 
                     </HStack>
                     <HStack m="10px auto" width="30%" color="white">
                         <Divider ></Divider>
