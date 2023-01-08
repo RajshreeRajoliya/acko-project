@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  align-items: space-around;
+  justify-content: center;
+}
+
+.userInput {
+  display: flex;
+  justify-content: center;
+}
+
+.input_class {
+  margin: 10px;
+  height: 60px;
+  width: 55px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-family: arimo;
+  font-size: 1.2rem;
+  border: 0.01px solid black;
+}
+
+/* h1 {
+  text-align: center;
+  font-family: arimo;
+  color: honeydew;
+} */
+
+.btn {
+  width: 150px;
+  height: 40px;
+  margin: 25px auto 0px auto;
+  font-family: arimo;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background: rgb(69, 204, 69);
+  color: white;
+}
+
+/* PREVIOUS DATA */
+
+.nav_login {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+
+.img {
+  margin: auto;
+  margin-top: 100px;
+}
+
+.img_1 {
+  display: block;
+  margin: auto;
+}
+
+.box {
+  text-align: center;
+  margin-right: 10px;
+  height: 50px;
+}
+
+.box_content {
+  justify-content: center;
+  margin: auto;
+  width: 450px;
+}
+
+.help_ancher {
+  text-decoration: none;
+  color: #0091dd;
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+  .input_class {
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

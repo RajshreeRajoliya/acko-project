@@ -1,0 +1,151 @@
+*{
+    color:#414A53
+}
+#bike{
+    display:flex;
+    border:1px solid rgba(128, 128, 128, 0.912);
+    margin:auto;
+}
+#num{
+     margin: auto;
+}
+#num p{
+     text-align: center;
+}
+#num p a{
+    color:blue;
+    text-decoration: none;
+}
+
+#date,#policytext{
+    font-size: 12px;
+    color:rgb(124,71,225)
+}
+button{
+   padding:15px 40px;
+   color:white;
+   background-color: rgb(68,203,134);
+   border: none;
+   border-radius: 5px;
+}
+#ins h5,h6,h3{
+   margin: 0 0 5px 30px;
+   text-align: left;
+
+}
+#ins{
+    width:30%;
+    border:1px solid rgba(128, 128, 128, 0.197);
+    width:330px;
+    height:200px;
+    padding:30px;
+    margin-top: 80px;
+    margin-left: -30px;
+    
+}
+.details{
+   display:flex;
+   justify-content:space-between ;
+   margin:auto 120px;
+   text-align:center;
+
+}
+#detail span{
+    background:#F4F5F7; height: 20px;margin:auto 0;padding:3px;
+    padding:5px 15px;
+
+}
+#left{
+border:1px solid rgba(128, 128, 128, 0.174);width:50%;padding:30px;height:580px;margin:auto;margin: 80px;margin-bottom: 0;text-align: center;
+}
+.insimg{
+    display: flex;
+    margin:10px;
+   
+}
+
+#calender{
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    width:27%;
+    border:1px solid rgba(128, 128, 128, 0.173);
+    padding:15px;
+    top: 520px;
+    left: 240px;
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);
+}
+#calen{
+    display: none;
+}
+#calender span{
+     background-color:rgb(228,246,254);
+    
+     border-radius: 5px;
+     padding:6px
+}
+.calhov{
+    display: flex;
+}
+#curr_policy{
+    display: none;
+}
+#policy{
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:20px;
+    width:17%;
+    border:1px solid rgba(128, 128, 128, 0.173);
+    padding:20px 25px;
+    top: 581px;
+    left: 350px;
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);
+}
+#policy span{
+     background-color:rgb(228,246,254);
+    
+     border-radius: 5px;
+     padding:6px;
+    
+}
+#policyhov{
+    display: flex;
+}
+@media all and (max-width: 900px) and (min-width:280px) {
+    #bike{
+        display:block;
+        width: 100%;
+        border:none
+ }
+    .details{
+        margin: 0;
+    }
+    #ins{
+     margin:auto;
+     }
+    #left{
+     height:650px;
+     width: 100%;
+     padding: 0;
+     margin:0
+    }
+    .details{
+        margin:20px
+    }
+    #policy{
+      
+        top: 511px;
+        left: 55px;
+        width: 70%;
+      
+    }
+
+    
+
+}

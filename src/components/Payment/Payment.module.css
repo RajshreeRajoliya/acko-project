@@ -1,0 +1,253 @@
+#payment_div {
+    width: 65%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1.3fr 2fr 1.3fr;
+    gap: 50px;
+}
+
+#payment_div p{
+    margin: 0;
+}
+
+#backBtn_div {
+    width: 65%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#backBtn_div p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #434f5a;
+}
+
+/* UPI  */
+
+#upi_container {
+    border: 1px solid rgba(0, 0, 0, 0.165);
+    padding: 15px;
+    border-radius: 5px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#upi_container  > div:first-child > div {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#upi_container > div:first-child > div img {
+    margin-right: 15px;
+    width: 22px;
+}
+
+#upi_container > div:first-child > div:first-child{
+    background-color: #f4f5f7;
+}
+
+#upi_container  > div:first-child  p{
+    color: #434f5a;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#upi_container  > div:first-child > div:first-child  p{
+    color: #434f5a;
+    font-weight: 700;
+}
+
+#upi_container  > div:last-child > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#upi_container  > div:last-child > div img {
+    margin-top: 4px;
+}
+
+#upi_container  > div:last-child > div p{
+    font-size: 14px;
+    margin-right: 5px;
+    color: gray;
+}
+
+/* SCAN  */
+/* #scan_container{
+    
+} */
+
+#scan_container p:first-child{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#scan_container p:last-child{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.479);
+    margin-top: 10px;
+}
+
+#scan_container > div:nth-child(2) button{
+    width: 100%;
+    margin: 40px 0;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    background-color: #0fa457;
+    transition: .2s;
+}
+
+#qrCode_div {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+#qrCode_div img {
+    width: 100%;
+}
+
+#upiInput_div p:first-child{
+    color: rgba(0, 0, 0, 0.489);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#upiInput_div p:last-child{
+    color: rgba(0, 0, 0, 0.400);
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+}
+
+#upiInput_div input {
+    margin: 10px 0;
+    padding: 13px;
+    width: 93%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#upiInput_div input::placeholder{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.550);
+}
+
+#payBtn_div button{
+    width: 100%;
+    margin: 30px 0;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    background-color: #d6d9e0;
+    transition: .2s;
+}
+
+/* TOTAL DIV  */
+#total_div {
+    background-color: #f4f5f7;
+    padding: 20px 15px;
+    border-radius: 13px;
+}
+
+#total_div > div:first-child{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 15px;
+}
+
+#total_div > div:first-child p:first-child{
+    font-size: 16px;
+    font-weight: 600;
+    color: #151619;
+}
+
+#total_div > div:first-child p:last-child{
+    font-size: 13px;
+    font-weight: 600;
+    color: #151619a7;
+    margin-top: 7px;
+}
+
+#total_div > div:nth-child(2) {
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+}
+
+#total_div > div:nth-child(2) > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#total_div > div:nth-child(2) > div p:first-child{
+    font-size: 13px;
+    font-weight: 400px;
+}
+
+#total_div > div:nth-child(2) > div p:last-child{
+    font-size: 13px;
+    font-weight: 400px;
+}
+
+#total_div > div:last-child{
+    padding: 16px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#total_div > div:last-child p{
+    font-weight: 500;
+}
+
+button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+        /* BREAK POINTS  */
+/* For Large Devices */
+@media screen  and (max-width: 992px){
+    #payment_div {
+        width: 90%;
+        gap: 40px;
+    }
+}
+  
+  /* For Medium Devices */
+@media screen  and (max-width: 768px){
+
+    #payment_div {
+        width: 80%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+  /* For Small Devices */
+@media screen  and (max-width: 350px){
+    #payment_div {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

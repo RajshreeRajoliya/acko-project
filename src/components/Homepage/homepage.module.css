@@ -1,0 +1,567 @@
+* {
+  font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* navbar */
+
+.nav_div {
+  width: 100%;
+  height: 80px;
+  background-color: #5e27c9;
+}
+
+.logo {
+  width: 80px;
+  height: 30px;
+  border-radius: 80px;
+  margin-top: 30%;
+}
+
+/*nav left side */
+.nav_left {
+  display: flex;
+  margin-left: 5%;
+  width: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.nav_text {
+  color: white;
+  margin-top: 6%;
+  margin-left: -8%;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*nav right side */
+
+.nav_right {
+  position: absolute;
+  width: 30%;
+  height: 5%;
+  position: absolute;
+  top: 3%;
+  display: flex;
+  left: 65%;
+  cursor: pointer;
+
+}
+
+.nav_claim {
+  background-color: #4a1f9e;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  color: white;
+  border-radius: 9px;
+  cursor: pointer;
+;
+
+}
+
+.claim_text {
+  margin-left: 6%;
+  margin-top: 3.5%;
+  font-size: 14px;
+  cursor: pointer;
+ 
+}
+
+.login_button {
+  font-weight: 700;
+  margin-left: 9%;
+  height: 26px;
+  width: 80px;
+  margin-top: 5px;
+  border: none;
+  background-color: #37c87e;
+  color: white;
+  border-radius: 5px;
+  
+  -webkit-filter : brightness(100%);
+  cursor: pointer;
+}
+
+.login_button:hover {
+  -webkit-filter: brightness(80%);
+}
+
+.nav_help {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 15%;
+  margin-top: 2%;
+  cursor: pointer;
+
+}
+
+/* mid */
+
+.mid_div {
+  height: 740px;
+  width: 1519px;
+  background-color: #5e27c9;
+  /* position: absolute; */
+}
+
+.left_banner {
+  width: 280px;
+  position: absolute;
+  top: 30%;
+  left: 1%;
+}
+.right_banner {
+  width: 280px;
+  position: absolute;
+  top: 30%;
+  left: 80%;
+}
+
+.insurance_text {
+ 
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.tag_line {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 600;
+  top: 24%;
+  left: 40%;
+  color: white;
+}
+
+.categories {
+  width: 38%;
+  height: 10%;
+  /* background-color: white; */
+  /* border:2px solid black; */
+  position: absolute;
+  top: 20%;
+  left: 31%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.cat_img {
+  width: 40px;
+  height: 40px;
+  padding: 2%;
+}
+
+.bikediv{
+background-color:#703BD9;
+height: 60%;
+margin-top: 13px;
+border-radius: 5px;
+padding: 2px;
+margin-left: 10px;
+}
+
+.car_cat_text {
+  color: white;
+  width: 120%;
+  align-items: center;
+  margin-left: -17%;
+  font-size: 14px;
+  margin-top: 10%;
+}
+
+.bike_cat_text {
+  color: white;
+  width: 120%;
+  align-items: center;
+  margin-left: 18%;
+  font-size: 14px;
+  margin-top: 10%;
+}
+
+.health_cat_text {
+  color: white;
+  width: 120%;
+  align-items: center;
+  margin-left: 10%;
+  font-size: 14px;
+  margin-top: 10%;
+}
+
+.categories_hr {
+  position: absolute;
+  width: 32%;
+  top: 44%;
+  left: 34%;
+  color: rgb(168, 168, 168);
+}
+
+.car_number {
+  width: 35%;
+  height: 10%;
+  background-color: white;
+  position: absolute;
+  top: 47%;
+  left: 32%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.cfform {
+  /* margin-left: 10%; */
+  /* margin-top: 5%; */
+}
+
+.categories_input {
+  height: 25px;
+  width: 100%;
+  border: none;
+  outline: none;
+ margin: auto;
+
+  
+}
+
+.insure_now_button {
+  /* position: absolute; */
+  border: none;
+  /* left: 63%; */
+  /* top:-0.5rem; */
+  width: 32%;
+  height: 55%;
+  border-radius: 10px;
+  background-color: #0FA457;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  -webkit-filter: brightness(100%);
+}
+
+.cfform {
+  display: flex;
+  justify-content: space-between;
+}
+
+.insure_now_button:hover {
+  -webkit-filter: brightness(80%);
+}
+
+.form_car_img {
+  width: 35px;
+  /* height: 40px; */
+  position: absolute;
+  top: 38px;
+  left: 20px;
+  color: gray;
+}
+
+hr {
+  color: white;
+  background-color: white;
+}
+
+.form_hr_break {
+  position: absolute;
+  width: 15%;
+  background-color: white;
+  top: 63%;
+  left: 41.8%;
+}
+
+.hr_break_text {
+  position: absolute;
+  top: 60%;
+  left: 47.5%;
+  width: 50px;
+  height: 32px;
+  text-align: center;
+  padding-top: 1%;
+  background-color: #5e27c9;
+  color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.div_quote {
+  position: absolute;
+  width: 35%;
+  height: 10%;
+  background-color: #481AA4;
+  top: 67%;
+  left: 32%;
+  border-radius: 15px;
+  display: flex;
+}
+
+.quote_text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 45%;
+  left: 13%;
+  width: 80%;
+  text-align: justify;
+}
+
+.quote_text_bold {
+  color: white;
+  font-weight: 650;
+  position: absolute;
+  
+  left: 13%;
+  font-size: 18px;
+}
+
+.get_a_quote {
+  padding: 6px 12px;
+  height: 60%;
+  width: 23%;
+  margin-left: 63%;
+  margin-top: 2.5%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.quote_img {
+  width: 40px;
+  margin-left: 3%;
+}
+
+.banner {
+  display: flex;
+  position: absolute;
+  width: 35%;
+  height: 14%;
+  top: 82%;
+  left: 32%;
+  background-color: rgb(124, 71, 225);
+  border-radius: 5px;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  position: absolute;
+  top: 15%;
+  left: 60%;
+}
+
+.ipl_teams {
+  display: flex;
+  margin-left: 2%;
+  justify-content: space-evenly;
+}
+
+.banner_left {
+  width: 130px;
+}
+
+.banner_middle {
+  width: 180px;
+}
+
+.partners_text_div {
+  color: white;
+  font-size: 9px;
+  background-color: rgb(89 , 32 , 197);
+  width: 150px;
+  height: 28px;
+  border-radius: 5px;
+}
+
+.partners_text {
+  margin-left: 28px;
+  margin-top: 8px;
+}
+
+.ipl_team_img {
+  width: 40px;
+  margin-top: 8px;
+}
+
+#arrow {
+  color: white;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: -2px;
+  font-weight: 800;
+  vertical-align: middle;
+}
+
+.reviews_div {
+  height: 200px;
+  width: 1519px;
+  background-color: rgb(246, 247, 251);
+}
+
+.reviews {
+  display: flex;
+  width: 85%;
+  height: 80%;
+  position: relative;
+  top: 10%;
+  left: 6%;
+  /* background-color: black; */
+  justify-content: space-evenly;
+}
+
+.each_review {
+  width: 40%;
+  /* background-color: black; */
+  /* border: 1px solid black; */
+  margin-left: 7%;
+  margin-top: 1.5%;
+}
+
+.reviewContent {
+  width: 92%;
+  /* margin-left: 1%; */
+  margin-top: 2%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.userDeets {
+  display: flex;
+}
+
+.userDeetsText {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.userProfileImg {
+  width: 30px;
+  height: 30px;
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-top: 85%;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+.userLocation {
+  font-size: 10px;
+  margin-top: 3px;
+  margin-left: 5%;
+}
+
+/* dropdown */
+
+.content_container {
+  width: 1519px;
+  position: absolute;
+  top: 10%;
+  height: 200px;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: white;
+}
+
+.inner_container {
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column {
+  margin-top: 2%;
+}
+
+ul {
+  list-style-type: none;
+  /* margin-left: -17%; */
+  margin-top: 3%;
+}
+
+li {
+  margin: 12% 0%;
+}
+
+.heading {
+  /* margin-left: 20%; */
+  font-weight: 700;
+}
+
+.resources_nav {
+  width: 225px;
+  height: 180px;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+  left: 25%;
+  top: 10%;
+}
+
+.resources_list {
+  margin: 16% 15%;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.login_nav {
+  width: 225px;
+  height: 180px;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+  left: 71.5%;
+  top: 10%;
+}
+
+.ratingdiv{
+
+  position: absolute;
+  width: 36%;
+  height: 10%;
+
+  top: 82%;
+  left: 29%;
+  border-radius: 15px;
+  display: flex;
+  gap: 10rem;
+
+
+
+}
+.ratingdiv >div> img{
+ width: 45px;
+ height: 50px;
+margin-left: 2rem;
+  
+  }
+ 
+.info{
+  color: white;
+  width: 100px;
+  text-align: center;
+}
+

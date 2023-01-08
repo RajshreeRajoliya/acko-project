@@ -1,0 +1,223 @@
+#inp{
+  width:90%;
+  font-weight:bold;  
+
+  border:none
+}
+#inp+button{
+    
+    padding:10px 12px;
+    border-radius: 10px;
+    background-color:rgb(55,200,126);
+    
+}
+
+#inp+button i{
+    color:white;  
+}
+#form{
+    border:1px solid rgba(128, 128, 128, 0.645);
+    border-radius: 10px;
+    width:80%;
+    height: 44px;
+    display: flex;
+    padding:5px;
+    margin:auto
+}
+#calender_search{
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    width:27%;
+    border:1px solid rgba(128, 128, 128, 0.173);
+    padding:15px;
+    top: 340px;
+    left: 280px;
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);
+}
+#calen_search{
+    display: none;
+}
+#calender_search span{
+     background-color:rgb(228,246,254);
+     border-radius: 5px;
+     padding:6px
+}
+.calhov{
+    display: flex;
+}
+#curr_policy_search{
+    display: none;
+}
+#policy_search{
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:20px;
+    width:17%;
+    border:1px solid rgba(128, 128, 128, 0.173);
+    padding:20px 25px;
+    top: 381px;
+    left: 390px;
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);
+}
+#policy_search span{
+     background-color:rgb(228,246,254);
+     border-radius: 5px;
+     padding:6px;
+    
+}
+#policyhov{
+    display: flex;
+}
+#popular{
+    position: absolute;
+    
+    width:30%;
+    top:50%;
+    left: -30px;
+    text-align: justify;
+    margin:0 200px;
+    display: none;
+}
+*{
+    color:#414A53
+}
+#bike{
+    display:flex;
+    border:1px solid rgba(128, 128, 128, 0.912);
+    margin: auto;
+}
+#num{
+     margin: auto;
+}
+#num p{
+     text-align: center;
+}
+#num p a{
+    color:blue;
+    text-decoration: none;
+}
+#date,#policytext{
+    font-size: 12px;
+    color:rgb(124,71,225)
+}
+button{
+   padding:15px 40px;
+   color:white;
+   background-color: rgb(68,203,134);
+   border: none;
+   border-radius: 5px;
+}
+#ins h5,h6,h3{
+   margin: 0 0 5px 30px;
+   text-align: left;
+
+}
+#ins{
+    width:30%;
+    border:1px solid rgba(128, 128, 128, 0.197);
+    width:330px;
+    height:200px;
+    padding:30px;
+    margin-top: 80px;
+    margin-left: -30px;
+    
+}
+.details{
+   display:flex;
+   justify-content:space-between ;
+   margin:-22px 80px;
+   text-align:center;
+
+}
+#detail
+{
+    margin-top: 40px;
+}
+#detail span{
+    background:#F4F5F7; height: 20px;margin:auto 0;padding:3px;
+    padding:5px 15px;
+
+}
+#left{
+border:1px solid rgba(128, 128, 128, 0.174);width:50%;padding:30px;height:580px;margin: 80px;margin-bottom: 0; text-align: center;
+}
+.insimg{
+    display: flex;
+    margin:10px;
+   
+}
+
+.calhov{
+    display: flex;
+}
+#curr_policy{
+    display: none;
+}
+
+   
+#policy span{
+     background-color:rgb(228,246,254);
+    
+     border-radius: 5px;
+     padding:6px;
+    
+}
+#policyhov{
+    display: flex;
+}
+@media all and (max-width: 900px) and (min-width:280px) {
+    #bike{
+        display:block;
+        width: 100%;
+        border:none
+ }
+    .details{
+         margin:auto 30px;
+     }
+    #ins{
+     margin:auto;
+     }
+    #left{
+     height:650px;
+     width: 100%;
+     padding: 0;
+     margin:0
+    }
+  
+    #policy{
+      
+        top: 511px;
+        left: 55px;
+        width: 70%;
+      
+    }
+    #popular{
+        top:25%;
+        
+        left:-39%;
+        width:70%;
+        
+    }
+    #left{
+        height:480px;
+        }
+    #calender_search{
+        top:38%;
+        left: 5%;
+        width: 80%;
+    }
+    #policy_search{
+        top:47%;
+        left: 19%;
+        width: 60%;
+    }
+    
+
+}

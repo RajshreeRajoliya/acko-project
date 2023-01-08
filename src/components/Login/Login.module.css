@@ -1,0 +1,106 @@
+.otp_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otp_btn_1 {
+   margin: 25px auto 0px auto;
+  height: 50px;
+  width: 130px;
+  border-radius: 10px;
+  background-color: #8d99a7;
+  color: white;
+}
+
+.phone_number_1 {
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  height: 50px;
+  width: 330px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.recover {
+  text-align: center;
+}
+
+.recover_ancher {
+  text-decoration: none;
+  color: #4291dd;
+}
+
+.box {
+  text-align: center;
+  margin-right: 10px;
+  height: 50px;
+}
+
+.img {
+  margin: auto;
+  /* margin-top: 100px; */
+}
+
+.img_1 {
+  display: block;
+  margin: auto;
+}
+
+.acko_logo {
+  height: 30px;
+  width: 81px;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.help {
+  width: 20px;
+  height: 20px;
+  margin-left: 1400px;
+  margin-bottom: -10px;
+}
+
+.help_ancher {
+  text-decoration: none;
+  color: #0091dd;
+}
+
+.box_content {
+  justify-content: center;
+  margin: auto;
+  width: 450px;
+}
+
+.nav_login {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+
+/* Added media queries for responsive design */
+@media (max-width: 767px) {
+  .phone_number_1 {
+    width: 80%; 
+  }
+  .otp_btn_1 {
+    width: 50%; 
+  }
+  .help {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .box_content {
+    width: 70%; 
+  }
+  .otp_btn_1 {
+    width: 30%; 
+  }
+  .phone_number_1 {
+    width: 60%; 
+  }
+}

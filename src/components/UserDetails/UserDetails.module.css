@@ -1,0 +1,267 @@
+#userDetails_container {
+    width: 70%;
+    margin: 20px auto; 
+    display: grid;
+    grid-template-columns: 1.7fr 1.2fr;
+    gap: 50px;
+} 
+
+#userDetails_container p{
+    margin: 0;
+}
+
+#firstDiv {
+    padding: 20px 100px;
+    border: 1px solid rgba(0, 0, 0, 0.100);
+    border-radius: 8px;
+}
+
+#firstDiv > p{
+    font-size: 24px;
+    font-weight: 700;
+    color: #454f59;
+    margin: 30px 0 20px;
+}
+
+#small_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.100);
+}
+
+#small_header > div {
+    display: flex;
+    align-items: center;
+}
+
+#small_header > div > div{
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    background-color: #d6d9e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 5px;
+}
+
+#small_header > div:first-child div{
+    background-color: #3eb753;
+}
+
+#small_header > div > p{
+    font-size: 11px;
+    font-weight: 500;
+    color: #151619;
+}
+
+/* FORM  */
+/* #input_container {
+
+} */
+
+#input_container input {
+    position: relative;
+    width: 350px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.203);
+    padding: 16px ;
+    outline: none;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+#input_container label {
+    position: relative;
+    top: -40px;
+    left: 15px;
+    color: 000;
+    font-size: 14px;
+    transition: top .3s;
+    padding: 0 3px;
+    pointer-events: none;
+    color: #454f59e0;
+}
+
+/* #input_container input:focus ~ label{
+    top: -65px;
+    background-color: #fff;
+} */
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#input_container input:focus {
+    border: 1px solid rgb(45, 45, 227);
+}
+
+#input_container > p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #555a68;
+    margin-bottom: 10px;
+}
+
+/* POLICY DIV  */
+#policy_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.100);
+    padding-bottom: 20px;
+}
+
+#policy_div img {
+    width: 50px;
+}
+
+#policy_div > div:last-child{
+    padding: 10px;
+}
+
+#policy_div p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #555a68;
+}
+
+#bottom_div {
+    padding: 20px 0;
+}
+
+#bottom_div p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #555a68;
+    margin-bottom: 20px;
+}
+
+#bottom_div p:last-child {
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+}
+
+#bottom_div p:last-child a {
+    font-weight: 500;
+}
+
+#button_div {
+    text-align: center;
+}
+
+#button_div button{
+    padding: 18px 40px;
+    background-color: #0fa457;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    transition: .2s;
+}
+
+#button_div button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* SECOND DIV  */
+#secondDiv {
+    background-color: #f6f7fb;
+    padding: 30px 20px 20px;
+    border-radius: 5px;
+}
+
+#secondDiv > div:first-child{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.073);
+    padding-bottom: 25px;
+}
+
+#secondDiv > div:first-child > div p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #414a53;
+}
+
+#secondDiv > div:first-child > div p:first-child{
+    font-size: 16px;
+    font-weight: 600;
+    color: #151619;
+    margin-bottom: 7px;
+}
+
+#price_div {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.073);
+}
+
+#price_div > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 0;
+}
+
+#price_div > div > p:first-child{
+    font-size: 14px;
+    font-weight: 400;
+    color: #151619;
+}
+
+#price_div > div > p:last-child{
+    font-size: 16px;
+    font-weight: 600;
+    color: #151619;
+}
+
+#toalPrice_div {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+#toalPrice_div > p:first-child{
+    font-weight: 600;
+    font-size: 16px;
+    color: #151619;
+}
+
+#toalPrice_div > p:last-child{
+    font-weight: 600;
+    font-size: 20px;
+    color: #151619;
+}
+
+        /* BREAK POINTS  */
+/* For Large Devices */
+@media screen  and (max-width: 992px){
+    #userDetails_container {
+        width: 90%;
+        grid-template-columns: 1.7fr 1.2fr;
+    }
+}
+  
+  /* For Medium Devices */
+@media screen  and (max-width: 768px){
+    #userDetails_container {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
+
+  /* For Small Devices */
+@media screen  and (max-width: 350px){
+    #userDetails_container {
+        width: 100%;
+        margin: 20px auto;
+        grid-template-columns: 1fr;
+    }
+}

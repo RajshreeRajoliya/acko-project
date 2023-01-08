@@ -1,0 +1,48 @@
+
+#container_div {
+    width: 70%;
+    margin: 20px auto 90px;
+    display: grid;
+    grid-template-columns: 3fr 5.3fr;
+}
+
+button{
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+        /* BREAK POINTS  */
+/* For Large Devices */
+@media screen  and (max-width: 992px){
+    #container_div {
+        width: 80%;
+        margin: 20px auto 90px;
+        display: grid;
+        grid-template-columns: 3fr 5.3fr;
+    }
+}
+  
+  /* For Medium Devices */
+@media screen  and (max-width: 768px){
+    #container_div {
+        width: 90%;
+        margin: 20px auto 90px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+  /* For Small Devices */
+@media screen  and (max-width: 350px){
+    #container_div {
+        width: 100%;
+        margin: 20px auto 90px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+  

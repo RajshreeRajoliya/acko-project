@@ -1,0 +1,72 @@
+
+#otp_container { 
+    width: 30%;
+    height: 90vh;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 2rem;
+    left: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+
+
+#otp_container > div img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+}
+
+#otp_container > div:nth-child(2) p:first-child{
+    font-weight: 700;
+    font-size: 20px;
+    color: #151619;
+}
+
+#otp_container > div:nth-child(2) p:last-child{
+    font-weight: 500;
+    font-size: 12px;
+    color: #555a68;
+}
+
+/* #inputOtp_div {
+
+} */
+
+#inputOtp_div input {
+    padding: 18px;
+    width: 18px;
+    border-radius: 10px;
+    margin: 0 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#verifyBtn_div {
+    padding-top: 30px;
+}
+
+#verifyBtn_div button{
+    padding: 17px 45px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: #0fa457;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#otp_container p:last-child{
+    font-weight: 500;
+    font-size: 14px;
+    color: #3c8cea;
+    margin-top: 25px;
+}
