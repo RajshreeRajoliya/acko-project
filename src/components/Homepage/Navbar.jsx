@@ -5,9 +5,10 @@ import { NavContentOne } from "./NavContentOne";
 import { NavContentThree } from "./NavContentThree";
 import { NavContentTwo } from "./NavContentTwo";
 import { useRef } from "react";
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { logout } from '../../Redux/AuthReducer/AuthAction'
 
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 export const Navbar = () => {
   
     const [displayProducts, setDisplayProducts] = useState("none");
@@ -17,6 +18,8 @@ export const Navbar = () => {
     const [style2, setStyle2] = useState(false);
     const [style3, setStyle3] = useState(false);
     const {isAuth} = useSelector(data=> data.auth);
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     var show = useRef(null)
     const applyStylesProducts = {
@@ -36,7 +39,7 @@ export const Navbar = () => {
    }
 
    function logoutPage(){
-  
+        dispatch(logout());
    }
   
    
@@ -44,16 +47,17 @@ export const Navbar = () => {
                 <div className={style.nav_div}>
 
             <div className={style.nav_left}>
-                <div >
+                <div  id={style.img_div}>
+                    <img onClick={ ()=> navigate('/')} src={logo} alt="" />
                 </div>
-       <Link to="/bikeproduct">   <div 
+         <div 
              
                 onMouseOver={call}
                
                 className={style.nav_text} >
                 
                     Products
-                </div></Link>    
+                </div>  
                 
                 <div  
                 

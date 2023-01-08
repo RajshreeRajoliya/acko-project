@@ -4,10 +4,15 @@
 
 /* navbar */
 
+#img_div img{
+  width: 100px;
+  border-radius: 20px;
+}
+
 .nav_div {
   width: 100%;
   height: 80px;
-  background-color: #5e27c9;
+  background-color:rgb(89, 32, 197);
 }
 
 .logo {
@@ -52,7 +57,7 @@
 }
 
 .nav_claim {
-  background-color: #4a1f9e;
+  background-color:rgb(89, 32, 197);
   width: 65%;
   height: 100%;
   display: flex;
@@ -105,7 +110,7 @@
 .mid_div {
   height: 740px;
   width: 1519px;
-  background-color: #5e27c9;
+  background-color:rgb(89, 32, 197);
   /* position: absolute; */
 }
 

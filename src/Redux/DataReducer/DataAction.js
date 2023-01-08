@@ -25,3 +25,12 @@ export const addModelNumber = (number)=> {
         })
     }
 }
+
+
+export function updateSearch(query){
+    return function(dispatch, getState){
+        return dispatch({type:'UPDATE',
+        payload:query
+    });
+    }
+}

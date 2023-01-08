@@ -9,7 +9,11 @@ import Login from "../components/Login/Login"
 import Otp from "../components/Login/Otp/Otp";
 import Bike from "../components/Bike/bike"
 import Search from "../components/Search/Search";
-import BikeProducts from "../components/BikePage/pages/BikeProducts"
+
+import { ChakraProvider } from "@chakra-ui/react";
+import Products from "../components/ProductPage/pages/Products"; 
+import BikeProducts from "../components/BikePage /pages/BikeProducts";
+
 
 const Routepage = () => {
   return (
@@ -23,7 +27,8 @@ const Routepage = () => {
       <Route path="/login" element={<Login />} /> 
        <Route path="/otp" element={<Otp />} />
        <Route path="/search" element={<Search/>} />
-       <Route path="/bikeproduct" element={<BikeProducts/>} />
+       <Route path="/bikepage" element={ <ChakraProvider><BikeProducts/></ChakraProvider> } />
+       <Route path="/carpage" element={ <ChakraProvider><Products/></ChakraProvider> } />
     </Routes>
   );
 };

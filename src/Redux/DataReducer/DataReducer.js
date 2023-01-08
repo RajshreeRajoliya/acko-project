@@ -22,6 +22,11 @@ function DataReducer(state = defaultData, action){
             ...state,
             modelNumber: action.payload
         }
+    }else if(action.type === 'UPDATE'){
+        return {
+            ...state,
+            bikeNumber: action.payload
+        }
     }
 
     return state;
