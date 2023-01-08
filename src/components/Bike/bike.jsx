@@ -117,7 +117,7 @@ function Bike() {
               </span>
             </div>
           </div>
-          <button onClick={ redirect }>View Prices</button>
+          <button onClick={ redirect } className={styles.button}>View Prices</button>
         </div>
         {/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
         <div id={styles.ins}>
@@ -153,7 +153,7 @@ function Bike() {
         <div id={styles.calender}>
           {arr.map((ele) => (
             <span
-              onClick= {()=>caledate(ele)}
+              onClick= {()=>caledate(ele) }  style={{textAlign:"center"}}
              >
               {ele}
             </span>
@@ -163,7 +163,7 @@ function Bike() {
         <div id={styles.curr_policy} onMouseOver={display_policy} onMouseOut={hide_policy} ref={curr_policy}>
           <div id={styles.policy}>
             {arr2.map((ele) => (
-              <span onClick={() => policyinner(ele)}>
+              <span onClick={() => policyinner(ele)} style={{textAlign:"center"}}>
                 {ele}
               </span>
             ))}
