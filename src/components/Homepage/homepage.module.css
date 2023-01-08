@@ -29,7 +29,8 @@
 
 .nav_text {
   color: white;
-  margin-top: 6%;
+  margin: 6%;
+  text-align: center;
   margin-left: -8%;
   font-size: 14px;
   font-weight: 500;

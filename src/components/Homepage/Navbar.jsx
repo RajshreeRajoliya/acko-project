@@ -31,13 +31,12 @@ export const Navbar = () => {
         "display": `${displayLogin}`
     }
    function call(){
-    //    show.current.setAttribute("style","display:block")
-        // setDisplayProducts('block')
+   
         setStyle1(true);
    }
 
    function logoutPage(){
-    // console.log('haiii')
+  
    }
   
    
@@ -47,19 +46,17 @@ export const Navbar = () => {
             <div className={style.nav_left}>
                 <div >
                 </div>
-             <div 
+       <Link to="/bikeproduct">   <div 
              
                 onMouseOver={call}
                
-                className={ `${style.nav_text} ${style.products}`} >
+                className={style.nav_text} >
                 
                     Products
-                </div> 
+                </div></Link>    
                 
                 <div  
-                // onMouseEnter={() => {setDisplayResources("block")}} 
-                    // onMouseOver={()=>  setStyle2(true)}
-                    //   onMouseLeave={() => {setDisplayResources("none")}} 
+                
                       className={style.nav_text}>
                     Resources
                 </div>
