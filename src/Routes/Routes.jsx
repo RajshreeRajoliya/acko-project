@@ -9,7 +9,7 @@ import Login from "../components/Login/Login"
 import Otp from "../components/Login/Otp/Otp";
 import Bike from "../components/Bike/bike"
 import Search from "../components/Search/Search";
-
+import BikeProducts from "../components/BikePage/pages/BikeProducts"
 const Routepage = () => {
   return (
     <Routes>
@@ -22,7 +22,7 @@ const Routepage = () => {
       <Route path="/login" element={<Login />} /> 
        <Route path="/otp" element={<Otp />} />
        <Route path="/search" element={<Search/>} />
-
+       <Route path="/bikeproduct" element={<BikeProducts/>} />
     </Routes>
   );
 };
