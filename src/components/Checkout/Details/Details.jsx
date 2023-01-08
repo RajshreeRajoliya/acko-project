@@ -1,8 +1,10 @@
 import {React, useState} from 'react'
+import { useSelector } from 'react-redux'
 import styles from './Details.module.css'
 
 const Details = () => {
   const [range, setRange] = useState(20342);
+  const { bikeNumber, modelNumber} = useSelector(data=> data.data);
   function show(e){
     // console.log(e.target.value);
     setRange(e.target.value);
@@ -11,7 +13,7 @@ const Details = () => {
     <div id={styles.details_div}>
       <div id={styles.first_box}>
         <div>
-          <p><span class="material-symbols-outlined">two_wheeler</span> KL470435 , Honda Cb Shine</p>
+          <p><span class="material-symbols-outlined">two_wheeler</span> {bikeNumber} , {modelNumber}</p>
           <a href="#">Edit</a>
         </div>
 
