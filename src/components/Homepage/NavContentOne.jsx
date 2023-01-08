@@ -13,7 +13,7 @@ export const NavContentOne = ({applystyles, style, handleStyle}) => {
        }
 
        function redirectBike(){
-        navigate('/productpage');
+        navigate('/bikepage');
    }
     return (
         <div className={styles.content_container} style={ (style)? {display: 'block'} : {display:'none'} }

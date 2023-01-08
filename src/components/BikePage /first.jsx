@@ -1,9 +1,10 @@
 import { Box, Button, Divider, HStack, Input, Stack, useToast, Text, IconButton, Image } from '@chakra-ui/react';
 import React from 'react'
 import { FaCarSide } from 'react-icons/fa';
+import {RiMotorbikeLine} from 'react-icons/ri'
 import { useState } from 'react';
 import { useStore,useDispatch } from 'react-redux';
-import { updateSearch } from '../../Redux/SearchReducer/SearchAction';
+import { updateSearch } from '../../Redux/DataReducer/DataAction';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -49,7 +50,7 @@ function First(props) {
                             variant={"unstyled"}
                             onChange={(e)=>setNumber(e.target.value)}
                             />
-                     <Link to="/bike">  <Button 
+                     <Link to="/search">  <Button 
                         onClick={()=>{
                             dispatch(updateSearch(number))
                         }}
@@ -66,7 +67,7 @@ function First(props) {
                         justify={"space-between"}
                         border="1px solid white" width="100%" borderRadius={"10px"}>
                         <HStack>
-                            <IconButton  borderRadius="50%" bg="rgba( 0,0,0,0.1)" color="cyan" icon={ <FaCarSide/>}></IconButton>
+                            <IconButton  borderRadius="50%" bg="rgba( 0,0,0,0.1)" color="cyan" icon={ <RiMotorbikeLine/>}></IconButton>
                          
                           <Box justify={"center"}>
                             <Text fontSize="14px" fontWeight={"700"}>Looking to insure your new bike?</Text>

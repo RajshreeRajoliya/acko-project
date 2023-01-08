@@ -19,6 +19,11 @@ function AuthReducer(state = defaultData, action){
             name: action.payload.name,
             email: action.payload.email
         }
+    }else if(action.type === 'LOGOUT'){
+        return {
+            ...state,
+            isAuth: false
+        }
     }
     return state;
 }

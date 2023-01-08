@@ -15,3 +15,9 @@ export const addDetails = ( details )=> {
         })
     }
  }
+
+ export const logout = (dispatch, getState)=> {
+    return dispatch({
+        type: 'LOGOUT'
+    })
+ }

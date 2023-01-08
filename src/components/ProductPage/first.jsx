@@ -1,6 +1,6 @@
 import { Box, Button, Divider, HStack, Input, Stack, useToast, Text, IconButton, Image } from '@chakra-ui/react';
 import React from 'react'
-import { FaCarSide } from 'react-icons/fa';
+import { FaCarSide  } from 'react-icons/fa';
 import { useState } from 'react';
 import { useStore,useDispatch } from 'react-redux';
 import { updateSearch } from '../../Redux/SearchReducer/SearchAction';
@@ -65,7 +65,7 @@ function First(props) {
                         justify={"space-between"}
                         border="1px solid white" width="100%" borderRadius={"10px"}>
                         <HStack>
-                            <IconButton  borderRadius="50%" bg="rgba( 0,0,0,0.1)" color="cyan" icon={ <FaCarSide/>}></IconButton>
+                            <IconButton  borderRadius="50%" bg="rgba( 0,0,0,0.1)" color="cyan" icon={ < FaCarSide/>}></IconButton>
                          
                           <Box justify={"center"}>
                             <Text fontSize="14px" fontWeight={"700"}>Looking to insure your new car?</Text>
