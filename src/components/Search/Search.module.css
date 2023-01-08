@@ -12,7 +12,7 @@
     
 }
 
-#inp+button i{
+#inp+ button i{
     color:white;  
 }
 #form{
@@ -85,9 +85,9 @@
     margin:0 200px;
     display: none;
 }
-*{
+/* *{
     color:#414A53
-}
+} */
 #bike{
     display:flex;
     border:1px solid rgba(128, 128, 128, 0.912);
@@ -107,7 +107,7 @@
     font-size: 12px;
     color:rgb(124,71,225)
 }
-button{
+.button{
    padding:15px 40px;
    color:white;
    background-color: rgb(68,203,134);

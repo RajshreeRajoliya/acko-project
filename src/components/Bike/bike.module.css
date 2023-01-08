@@ -1,10 +1,11 @@
-*{
-    color:#414A53
-}
+/* *{
+  
+} */
 #bike{
     display:flex;
     border:1px solid rgba(128, 128, 128, 0.912);
     margin:auto;
+    color:#414A53
 }
 #num{
      margin: auto;
@@ -21,7 +22,7 @@
     font-size: 12px;
     color:rgb(124,71,225)
 }
-button{
+.button{
    padding:15px 40px;
    color:white;
    background-color: rgb(68,203,134);
@@ -72,8 +73,8 @@ border:1px solid rgba(128, 128, 128, 0.174);width:50%;padding:30px;height:580px;
     width:27%;
     border:1px solid rgba(128, 128, 128, 0.173);
     padding:15px;
-    top: 520px;
-    left: 240px;
+    top: 510px;
+    left: 290px;
     border-radius: 10px;
     background-color:white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);
@@ -101,8 +102,8 @@ border:1px solid rgba(128, 128, 128, 0.174);width:50%;padding:30px;height:580px;
     width:17%;
     border:1px solid rgba(128, 128, 128, 0.173);
     padding:20px 25px;
-    top: 581px;
-    left: 350px;
+    top: 571px;
+    left: 410px;
     border-radius: 10px;
     background-color:white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);

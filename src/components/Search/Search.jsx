@@ -121,7 +121,7 @@ function Search() {
    }
 
   return (
-    <div>
+    <div style={{  color:"#414A53"}}>
       <div id={styles.bike}>
         <div id={styles.left}>
           <div id={styles.num}>
@@ -133,7 +133,7 @@ function Search() {
             </p>
           </div>
         <h2>Select your bike</h2>
-        <div id={styles.inp_div}> <form id={styles.form}> <input style={{outline: 'none'}} autoComplete="off" placeholder="Search bike model" id={styles.inp} onClick={hide_show} required onChange={betterfunction}/> <button ><i class="fa-solid fa-magnifying-glass"></i> </button></form>
+        <div id={styles.inp_div}> <form id={styles.form}> <input style={{outline: 'none'}} autoComplete="off" placeholder="Search bike model" id={styles.inp} onClick={hide_show} required onChange={betterfunction}/> <button className={styles.button} ><i class="fa-solid fa-magnifying-glass"></i> </button></form>
       
       </div>
       
@@ -196,7 +196,7 @@ function Search() {
         <div id={styles.calender_search}>
           {arr.map((ele) => (
             <span
-              onClick= {()=>caledate(ele)}
+              onClick= {()=>caledate(ele)} style={{textAlign:"center"}}
              >
               {ele}
             </span>
@@ -208,7 +208,7 @@ function Search() {
         <div id={styles.curr_policy_search} onMouseOver={display_policy} onMouseOut={hide_policy} ref={curr_policy}>
           <div id={styles.policy_search}>
             {arr2.map((ele) => (
-              <span onClick={() => policyinner(ele)}>
+              <span onClick={() => policyinner(ele)} style={{textAlign:"center"}}>
                 {ele}
               </span>
             ))}
