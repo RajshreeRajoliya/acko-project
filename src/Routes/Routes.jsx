@@ -12,7 +12,7 @@ import Search from "../components/Search/Search";
 
 import { ChakraProvider } from "@chakra-ui/react";
 import Products from "../components/ProductPage/pages/Products"; 
-import BikeProducts from "../components/BikePage /pages/BikeProducts";
+import BikeProducts from "../components/BikePage/pages/BikeProducts";
 
 
 const Routepage = () => {
